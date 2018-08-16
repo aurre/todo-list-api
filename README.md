@@ -1,24 +1,27 @@
-# README
+# TODO
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<!-- Todo -->
 
-Things you may want to cover:
+- title (Publix) (Complete)
+  - salt x
+  - sugar x
+  - vegan cheese x
+  - pizza(vegan) x
 
-* Ruby version
+Task
 
-* System dependencies
+- title (string)
+- description (text)
 
-* Configuration
+Item
 
-* Database creation
+- name (string)
+- isCompleted (boolean)
+- task_id(int)
+  task:references
+  - generate foreignKey and index
 
-* Database initialization
+Relations
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Todo has_many Items
+- Item belongs_to Todo
